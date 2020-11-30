@@ -29,7 +29,8 @@ const router = new Router({
           meta: {
             layout: MinimalLayout,
             authenticated: false
-          }
+          },
+          props: true
         },
         {
           name: 'goals',
@@ -38,7 +39,8 @@ const router = new Router({
           meta: {
             layout: MinimalLayout,
             authenticated: false
-          }
+          },
+          props: true
         },
         {
           name: 'diet',
@@ -47,7 +49,8 @@ const router = new Router({
           meta: {
             layout: MinimalLayout,
             authenticated: false
-          }
+          },
+          props: true
         },
         {
           name: 'dob',
@@ -56,7 +59,8 @@ const router = new Router({
           meta: {
             layout: MinimalLayout,
             authenticated: false
-          }
+          },
+          props: true
         },
         {
           name: 'success',
@@ -65,7 +69,8 @@ const router = new Router({
           meta: {
             layout: MinimalLayout,
             authenticated: false
-          }
+          },
+          props: true
         }
       ]
     }
