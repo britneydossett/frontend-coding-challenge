@@ -1,6 +1,7 @@
 <script>
   import TextInput from '@/components/Shared/TextInput'
   import ThvButton from '@/components/Shared/Button'
+  import { mapActions } from 'vuex'
 
   export default {
     name: 'Name',
@@ -13,8 +14,13 @@
         name: ''
       }
     },
+    mounted () {
+      this.updateCurrentStep(1)
+    },
     methods: {
+      ...mapActions('survey', ['updateName', 'updateCurrentStep']),
       submit () {
+        this.updateName(this.name)
         this.$router.push('/goals')
       }
     }
